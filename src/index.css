@@ -24,12 +24,6 @@ code {
 .slick-list {
   margin: 0 -10px;
 }
-div > .img {
-  height: 1000% !important;
-  display: none;
-  width: auto;
-  object-fit: cover;
-}
 nav {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
