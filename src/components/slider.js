@@ -40,7 +40,7 @@ export default class Responsive extends Component {
             centerPadding: "60px",
             autoplay: true,
             dots: true,
-            arrows: false,
+            arrows: true,
             autoplaySpeed: 1000,
             cssEase: "linear",
           },
