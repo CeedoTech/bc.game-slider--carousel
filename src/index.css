@@ -17,7 +17,19 @@ code {
     monospace;
 }
 
-/* Directly added styles including background colour */
+/* Directly added    styles including background colour */
+.slick-slide {
+  height: 179px;
+  width: 369px;
+}
+.slick-slide img {
+  height: 179px;
+  width: 369px;
+  border-radius: 15px;
+}
+.slick-slide:not(.slick-active) {
+  opacity: 0.5;
+}
 .slick-slide > div {
   margin: 0 10px;
 }

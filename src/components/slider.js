@@ -4,9 +4,10 @@ import Slider from "react-slick";
 export default class Responsive extends Component {
   render() {
     var settings = {
-      dots: true,
+      dots: false,
       infinite: true,
-      speed: 2000,
+      centerModer: true,
+      speed: 1000,
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,
@@ -17,12 +18,13 @@ export default class Responsive extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
+            dots: false,
           },
         },
         {
           breakpoint: 600,
           settings: {
+            dots: false,
             slidesToShow: 2,
             slidesToScroll: 2,
             initialSlide: 2,
@@ -33,6 +35,14 @@ export default class Responsive extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            centerMode: true,
+            infinite: true,
+            centerPadding: "60px",
+            autoplay: true,
+            dots: true,
+            arrows: false,
+            autoplaySpeed: 1000,
+            cssEase: "linear",
           },
         },
       ],
@@ -40,110 +50,58 @@ export default class Responsive extends Component {
     return (
       <div className="my-10 ml-10 mr-10">
         <Slider {...settings}>
-          <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/14.png"
-              alt=""
-            />
+          <div style={{ width: 300 }}>
+            <img className="cursor-pointer " src="banner/1.png" alt="" />
           </div>
           <div>
             <img
-              className="w-100% h-400  cursor-pointer rounded-3xl"
+              className="w-100% h-400  cursor-pointer "
               src="banner/lottery.webp"
               alt=""
             />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/2.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/2.png" alt="" />
           </div>
           <div>
             <img
-              className="w-100% h-400  cursor-pointer rounded-3xl"
+              className="w-100% h-400  cursor-pointer "
               src="banner/3.png"
               alt=""
             />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/4.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/4.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/5.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/5.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/6.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/6.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/7.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/7.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/8.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/8.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/9.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/9.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/10.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/10.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/11.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/11.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/12.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/12.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/13.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/13.png" alt="" />
           </div>
           <div>
-            <img
-              className="cursor-pointer rounded-3xl"
-              src="banner/14.png"
-              alt=""
-            />
+            <img className="cursor-pointer " src="banner/14.png" alt="" />
           </div>
         </Slider>
       </div>
